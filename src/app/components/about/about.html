@@ -1,1 +1,85 @@
-<p>about works!</p>
+<div class="container mt-5">
+
+  <div class="card shadow-lg border-0">
+
+    <div class="card-body p-4">
+
+      <div class="row align-items-center">
+
+        <!-- Profile Image -->
+        <div class="col-md-3 text-center">
+          <img
+            src="assets/profile.jpeg"
+            class="img-fluid rounded-circle"
+            style="width:160px"
+          />
+        </div>
+
+        <!-- About Text -->
+        <div class="col-md-9">
+
+          <h2>{{ profile.name }}</h2>
+
+          <h5 class="text-muted">{{ profile.role }}</h5>
+
+          <p class="mt-3">
+            {{ profile.summary }}
+          </p>
+
+          <p>
+            {{ profile.description1 }}
+          </p>
+
+          <p>
+            {{ profile.description2 }}
+          </p>
+
+          <p>
+            {{ profile.description3 }}
+          </p>
+
+        </div>
+
+      </div>
+
+      <hr>
+
+      <!-- Key Strengths -->
+
+      <h4>Key Strengths</h4>
+
+      <span
+        *ngFor="let skill of profile.strengths"
+        class="badge bg-primary me-2 mb-2"
+      >
+        {{ skill }}
+      </span>
+
+      <hr>
+
+      <!-- Focus Areas -->
+
+      <h4>Engineering Focus</h4>
+
+      <ul class="list-group list-group-flush">
+
+        <li
+          *ngFor="let focus of profile.focusAreas"
+          class="list-group-item"
+        >
+          {{ focus }}
+        </li>
+
+      </ul>
+
+      <hr>
+
+      <p class="mt-3">
+        {{ profile.closingStatement }}
+      </p>
+
+    </div>
+
+  </div>
+
+</div>

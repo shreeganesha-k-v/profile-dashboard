@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-skills',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './skills.html',
-  styleUrl: './skills.css',
+  styleUrls: ['./skills.css'],
 })
 export class SkillsComponent {
   skills = [

@@ -8,11 +8,12 @@ import { CertificationsComponent } from './components/certifications/certificati
 import { ContactComponent } from './components/contact/contact';
 
 export const routes: Routes = [
- { path: '', component: HomeComponent },
- { path: 'about', component: AboutComponent },
- { path: 'skills', component: SkillsComponent },
- { path: 'projects', component: ProjectsComponent },
- { path: 'experience', component: ExperienceComponent },
- { path: 'certifications', component: CertificationsComponent },
- { path: 'contact', component: ContactComponent }
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'skills', component: SkillsComponent },
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'experience', component: ExperienceComponent },
+  { path: 'certifications', component: CertificationsComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

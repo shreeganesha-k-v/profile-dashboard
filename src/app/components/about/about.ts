@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Profile } from './profile';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './about.html',
-  styleUrl: './about.css',
+  styleUrls: ['./about.css'],
 })
-export class AboutComponent {}
+export class AboutComponent {
+   profile = new Profile();
+}
