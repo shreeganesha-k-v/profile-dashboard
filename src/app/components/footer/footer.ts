@@ -1,9 +1,17 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-footer',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './footer.html',
   styleUrls: ['./footer.css'],
 })
-export class FooterComponent {}
+export class FooterComponent {
+  currentYear: number = new Date().getFullYear();
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}

@@ -1,1 +1,48 @@
-<p>contact works!</p>
+<div class="contact-container">
+  <div class="contact-card">
+
+    <h2>Contact Me</h2>
+
+    <!-- Email -->
+    <div class="contact-item">
+      <span class="icon">📧</span>
+      <a href="mailto:shreeganeshakv444@gmail.com">
+        shreeganeshakv444@gmail.com
+      </a>
+    </div>
+
+    <!-- Phone -->
+    <div class="contact-item" (click)="copyPhone()">
+      <span class="icon">📱</span>
+      <span>{{ phone }}</span>
+    </div>
+
+    <!-- LinkedIn -->
+    <div class="contact-item">
+      <span class="icon">💼</span>
+      <a href="https://www.linkedin.com/in/shreeganesha-k-v-3906121b3/" target="_blank">
+        LinkedIn
+      </a>
+    </div>
+
+    <!-- GitHub -->
+    <div class="contact-item">
+      <span class="icon">💻</span>
+      <a href="https://github.com/shreeganesha-k-v" target="_blank">
+        GitHub
+      </a>
+    </div>
+
+    <!-- Location -->
+    <div class="contact-item">
+      <span class="icon">📍</span>
+      <span>India</span>
+    </div>
+
+    <!-- Resume -->
+    <button class="resume-btn" (click)="downloadResume()">
+      Download Resume
+    </button>
+
+  </div>
+</div>

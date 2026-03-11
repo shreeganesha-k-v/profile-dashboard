@@ -1,6 +1,6 @@
 export class Profile {
 
-  name: string = "Shreeganesha K";
+  name: string = "Shreeganesha K V";
 
   role: string = "Full Stack Software Engineer";
 
