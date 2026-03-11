@@ -1,16 +1,110 @@
-<div class="dashboard">
+<div class="home-container">
 
-<h1>Shreeganesha K V</h1>
+  <!-- HERO SECTION -->
 
-<h3>Java Backend Developer | Spring Boot | Microservices</h3>
+  <div class="hero">
 
-<p>
-Backend Developer with experience building scalable
-banking applications and REST APIs.
-</p>
+    <div class="hero-left">
 
-<button>
-View Projects
-</button>
+      <h1>
+        Hi, I'm <span>{{name}}</span>
+      </h1>
+
+      <h3>
+        {{role}} | {{tagline}}
+      </h3>
+
+      <p>
+        {{description}}
+      </p>
+
+      <div class="hero-buttons">
+
+        <button routerLink="/projects">
+          View Projects
+        </button>
+
+        <button routerLink="/contact">
+          Contact Me
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="hero-right">
+
+      <img
+        [src]="profileImage"
+        alt="profile"
+      />
+
+    </div>
+
+  </div>
+
+  <!-- TECH STACK -->
+
+  <div class="section">
+
+    <h2>Tech Stack</h2>
+
+    <div class="skill-tags">
+
+      <span *ngFor="let tech of techStack">
+        {{tech}}
+      </span>
+
+    </div>
+
+  </div>
+
+  <!-- ACHIEVEMENTS -->
+
+  <div class="section">
+
+    <h2>Highlights</h2>
+
+    <div class="achievement-cards">
+
+      <div
+        class="card"
+        *ngFor="let achievement of achievements"
+      >
+
+        <h3>
+          {{achievement.title}}
+        </h3>
+
+        <p>
+          {{achievement.description}}
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- STATS -->
+
+  <div class="section stats">
+
+    <div
+      class="stat-card"
+      *ngFor="let stat of stats"
+    >
+
+      <h2>
+        {{stat.value}}
+      </h2>
+
+      <p>
+        {{stat.label}}
+      </p>
+
+    </div>
+
+  </div>
 
 </div>
