@@ -100,3 +100,43 @@ flex:1;
 font-size:32px;
 color:#007bff;
 }
+
+.view-more{
+  margin-top:12px;
+}
+
+.view-more-link{
+  font-weight:600;
+  color:#007bff;
+  text-decoration:none;
+}
+
+.view-more-link:hover{
+  text-decoration:underline;
+}
+
+/* Button-style override for the "view more" link */
+.view-more .view-more-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 18px;
+  border-radius:999px;
+  background:#007bff;
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+  border:1px solid rgba(0, 123, 255, 0.9);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.view-more .view-more-link:hover{
+  background:#0056d6;
+  box-shadow:0 8px 18px rgba(0,0,0,0.15);
+  transform: translateY(-1px);
+}
+
+.view-more .view-more-link:focus-visible{
+  outline:2px solid rgba(0,123,255,0.9);
+  outline-offset:3px;
+}
