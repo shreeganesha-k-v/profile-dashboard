@@ -14,7 +14,7 @@
     <!-- Phone -->
     <div class="contact-item" (click)="copyPhone()">
       <span class="icon">📱</span>
-      <span>{{ phone }}</span>
+      <span>{{ copied ? 'Copied!' : phone }}</span>
     </div>
 
     <!-- LinkedIn -->
@@ -36,7 +36,9 @@
     <!-- Location -->
     <div class="contact-item">
       <span class="icon">📍</span>
-      <span>India</span>
+      <a href="https://www.google.com/maps/place/Bangalore" target="_blank">
+        Bangalore
+      </a>
     </div>
 
     <!-- Resume -->
