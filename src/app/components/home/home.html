@@ -37,6 +37,8 @@
       <img
         [src]="profileImage"
         alt="profile"
+        (click)="openProfileDialog()"
+        class="profile-img"
       />
 
     </div>
@@ -111,6 +113,17 @@
 
     </div>
 
+  </div>
+
+  <!-- PROFILE PHOTO DIALOG -->
+
+  <div class="profile-dialog" *ngIf="showProfileDialog" (click)="closeProfileDialog()">
+    <div class="profile-dialog-content" (click)="$event.stopPropagation()">
+      <button class="dialog-close" (click)="closeProfileDialog()" aria-label="Close">
+        ✕
+      </button>
+      <img [src]="profileImage" alt="profile" />
+    </div>
   </div>
 
 </div>

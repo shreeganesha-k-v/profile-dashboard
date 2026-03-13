@@ -20,6 +20,16 @@ export class HomeComponent {
 
   profileImage: string = "assets/profile.jpeg";
 
+  showProfileDialog = false;
+
+  openProfileDialog() {
+    this.showProfileDialog = true;
+  }
+
+  closeProfileDialog() {
+    this.showProfileDialog = false;
+  }
+
   techStack: string[] = [
     "Java",
     "Spring Boot",
