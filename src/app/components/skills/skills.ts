@@ -24,7 +24,11 @@ export class SkillsComponent {
         "Spring Boot",
         "Microservices",
         "REST APIs",
-        "Hibernate / JPA"
+        "Hibernate / JPA",
+        "Java Reflection",
+        "Java Streams",
+        "Java Concurrency",
+        "Design Patterns"
       ]
     },
 
