@@ -24,6 +24,13 @@ export class ProjectsComponent {
         image: 'assets/spring_ai.png' 
       },
       {
+        title: 'Profile Dashboard',
+        description: 'Built a responsive portfolio dashboard using Angular with component-based architecture to dynamically render projects, skills, and contact details. Deployed and hosted using GitHub Pages for seamless accessibility.',
+        techStack: ['Angular', 'TypeScript', 'HTML', 'CSS'],
+        github: 'https://github.com/shreeganesha-k-v/profile-dashboard',
+        image: 'assets/angular.png'
+      },
+      {
         title: 'Library Service App',
         description: 'Designed and developed a scalable Library Management system with RESTful APIs to manage books, users, and transactions. Implemented CRUD operations, optimized data handling, and ensured efficient backend processing.',
         techStack: ['Java', 'Spring Boot', 'REST API', 'Oracle', 'JPA','Docker'],
@@ -58,12 +65,26 @@ export class ProjectsComponent {
         github: 'https://github.com/shreeganesha-k-v/Computer-Human-Interaction-by-Gestures',
         image: 'assets/arduino.png'
       },
-    {
-      title: 'Virtual Try-On System',
-      description: 'Built a virtual try-on solution using computer vision techniques to simulate real-time product fitting and enhance user experience.',
-      techStack: ['Python', 'OpenCV', 'Computer Vision'],
-      github: 'https://github.com/shreeganesha-k-v/Virtual-try-on',
-      image: 'assets/machine_learning.png'
-    }
+      {
+        title: 'Virtual Try-On System',
+        description: 'Built a virtual try-on solution using computer vision techniques to simulate real-time product fitting and enhance user experience.',
+        techStack: ['Python', 'OpenCV', 'Computer Vision'],
+        github: 'https://github.com/shreeganesha-k-v/Virtual-try-on',
+        image: 'assets/machine_learning.png'
+      },
+      {
+        title: 'Kubernetes Hands-on',
+        description: 'Practiced container orchestration concepts by deploying and managing applications using Kubernetes, including pods, deployments, and service configurations.',
+        techStack: ['Kubernetes', 'Docker', 'DevOps'],
+        github: 'https://github.com/shreeganesha-k-v/kubernetes-handson',
+        image: 'assets/kubernetes.png'
+      },
+      {
+        title: 'Python Learning',
+        description: 'Explored core Python concepts including data structures, problem-solving, and scripting to build a strong foundation in programming and automation.',
+        techStack: ['Python'],
+        github: 'https://github.com/shreeganesha-k-v/Python-learning',
+        image: 'assets/python.png'
+      }
    ]
 }
