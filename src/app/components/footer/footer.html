@@ -1,18 +1,51 @@
-<footer class="footer text-center p-3">
+<footer class="footer">
 
-  <div class="social-links mb-2">
-    <a href="https://github.com/Shreeganesha-K-V">GitHub</a> |
-    <a href="https://linkedin.com/in/shreeganesha-k-v">LinkedIn</a> |
-    <a href="https://leetcode.com/u/Shreeganesha_K_V/">LeetCode</a>
+  <div class="footer-container">
+
+    <!-- CENTERED MAIN SECTION -->
+    <div class="footer-main">
+
+      <h2>Shreeganesha K V</h2>
+      <p>Java Full Stack Developer</p>
+
+      <!-- SOCIAL ICONS -->
+      <div class="social-icons">
+        <a *ngFor="let link of socialLinks"
+           [href]="link.url"
+           target="_blank">
+          <i [class]="link.icon"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+
+      <h4>Quick Links</h4>
+
+      <div class="links">
+        <a *ngFor="let link of quickLinks"
+           [routerLink]="link.route">
+          {{link.name}}
+        </a>
+      </div>
+
+    </div>
+
   </div>
 
-  <div class="mb-2">
-    <a routerLink="/about">About</a> |
-    <a routerLink="/contact">Contact</a>
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+
+    <p>
+      © {{currentYear}} Shreeganesha K V
+    </p>
+
+    <button (click)="scrollToTop()">
+      ↑ Top
+    </button>
+
   </div>
 
-  <p class="mb-0">
-    © {{currentYear}} Shreeganesha K V
-  </p>
-  <button (click)="scrollToTop()">↑ Top</button>
 </footer>
