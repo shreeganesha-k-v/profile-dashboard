@@ -1,1 +1,63 @@
-<p>experience works!</p>
+<section class="experience-section">
+  <h2 class="section-title">Work Experience</h2>
+
+  <div class="timeline">
+    <div class="timeline-item" *ngFor="let exp of experiences">
+
+      <!-- Company -->
+      <div class="company-card">
+        <img 
+            [src]="exp.logoUrl" 
+            alt="{{ exp.company }}" 
+            class="company-logo"
+        />
+        <h3 class="company-name">{{ exp.company }}</h3>
+        <span class="location">{{ exp.location }}</span>
+      </div>
+
+      <!-- Roles -->
+      <div 
+        class="role-card" 
+        *ngFor="let role of exp.roles"
+        [class.current-role]="role.current"
+      >
+
+        <div class="role-header">
+          <h4>
+            {{ role.title }}
+
+            <span *ngIf="role.current" class="current-badge">
+              Current
+            </span>
+
+            <span *ngIf="role.employmentType" class="employment-badge">
+              {{ role.employmentType }}
+            </span>
+          </h4>
+
+          <span class="duration">{{ role.duration }}</span>
+        </div>
+
+        <p class="project" *ngIf="role.project">
+          {{ role.project }}
+        </p>
+
+        <!-- Tech Stack -->
+        <div class="tech-stack">
+          <span *ngFor="let tech of role.techStack">
+            {{ tech }}
+          </span>
+        </div>
+
+        <!-- Highlights -->
+        <ul>
+          <li *ngFor="let item of role.highlights">
+            {{ item }}
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+</section>

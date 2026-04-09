@@ -1,0 +1,180 @@
+.experience-section {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #f8fafc, #eef2ff);
+  color: #1e293b;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #2563eb;
+}
+
+/* Timeline */
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  width: 2px;
+  height: 100%;
+  background: #c7d2fe;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  padding-left: 50px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  width: 14px;
+  height: 14px;
+  background: #2563eb;
+  border-radius: 50%;
+}
+
+/* Company */
+
+.company-card {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.company-logo {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+  padding: 5px;
+  border: 1px solid #e2e8f0;
+}
+
+.company-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.location {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* Role Card */
+
+.role-card {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  margin-top: 15px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.25s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.current-role {
+  border-left: 4px solid #22c55e;
+  background: #f0fdf4;
+}
+
+/* Header */
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.role-header h4 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.duration {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+/* Badges */
+
+.current-badge {
+  background: #22c55e;
+  color: white;
+  font-size: 0.65rem;
+  padding: 3px 6px;
+  margin-left: 8px;
+  border-radius: 4px;
+}
+
+.employment-badge {
+  background: #f59e0b;
+  color: white;
+  font-size: 0.65rem;
+  padding: 3px 6px;
+  margin-left: 8px;
+  border-radius: 4px;
+}
+
+/* Project */
+
+.project {
+  font-size: 0.85rem;
+  margin: 8px 0;
+  color: #475569;
+}
+
+/* Tech Stack */
+
+.tech-stack {
+  margin: 10px 0;
+}
+
+.tech-stack span {
+  display: inline-block;
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin: 3px;
+  font-size: 0.75rem;
+}
+
+/* Highlights */
+
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #334155;
+}
