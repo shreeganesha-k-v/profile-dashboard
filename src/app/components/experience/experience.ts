@@ -31,7 +31,7 @@ export class ExperienceComponent {
       company: 'Fidelity Investments (via NTT DATA)',
       location: 'Bengaluru, India',
       project: 'Workplace Investing , Fidelity Healthcare and Benefits (FHB) division',
-      logoUrl: '/assets/fidelity-logo.png',
+      logoUrl: 'assets/fidelity-logo.png',
       roles: [
         {
           title: 'Full Stack Developer',
@@ -67,7 +67,7 @@ export class ExperienceComponent {
     {
       company: 'Tietoevry',
       location: 'Bengaluru, India',
-      logoUrl: '/assets/tietoevry-logo.png',
+      logoUrl: 'assets/tietoevry-logo.png',
       roles: [
         {
           title: 'Software Engineer',

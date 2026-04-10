@@ -11,12 +11,12 @@ import { RouterLink } from '@angular/router';
 export class HomeComponent {
   name: string = "Shreeganesha K V";
 
-  role: string = "Java Backend Developer";
+  role: string = "Full Stack Developer";
 
   tagline: string = "Spring Boot | Microservices | REST APIs";
 
   description: string =
-    "Backend Developer with experience building scalable banking applications and REST APIs in the FinTech domain.";
+    "Full Stack Developer experienced in developing and scaling enterprise-grade FinTech applications for workplace investing and employee benefit platforms. Skilled in backend architecture, RESTful services, and leading system migrations from legacy to modern microservices, ensuring performance, security, and reliability.";
 
   profileImage: string = "assets/profile.jpeg";
 

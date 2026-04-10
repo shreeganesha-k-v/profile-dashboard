@@ -2,7 +2,7 @@ export class Profile {
 
   name: string = "Shreeganesha K V";
 
-  role: string = "Full Stack Software Engineer";
+  role: string = "Full Stack Developer";
 
   currentCompany: string =
     "Fidelity Investments (via NTT DATA) – Workplace Investing Division";
@@ -26,6 +26,7 @@ export class Profile {
     "Java & Spring Boot Microservices",
     "Angular & React Frontend",
     "REST API Design",
+    "Azure Cloud Services and DevOps",
     "System Architecture",
     "Performance Optimization",
     "Agile Enterprise Development",
