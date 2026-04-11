@@ -1,1 +1,36 @@
-<p>certifications works!</p>
+<div class="cert-container">
+  <div 
+    class="cert-card" 
+    *ngFor="let cert of certifications"
+  >
+    <!-- HEADER -->
+    <div class="cert-header" (click)="toggle(cert)">
+      <div class="left">
+        <h3>{{ cert.title }}</h3>
+        <p>{{ cert.issuer }} • {{ cert.year }}</p>
+      </div>
+
+      <div class="arrow" [class.open]="cert.isOpen">
+        ▼
+      </div>
+    </div>
+
+    <!-- EXPANDABLE CONTENT -->
+    <div class="cert-body" [class.open]="cert.isOpen">
+      <div class="content">
+        <img 
+          *ngIf="cert.isOpen"
+          [src]="cert.image" 
+          alt="certificate"
+        />
+
+        <div class="details">
+          <p><strong>ID:</strong> {{ cert.credentialId }}</p>
+          <a [href]="cert.verifyLink" target="_blank">
+            Verify Certificate
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
