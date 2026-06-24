@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { AiJdAnalyzerComponent } from '../ai-jd-analyzer/ai-jd-analyzer';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, AiJdAnalyzerComponent],
   templateUrl: './home.html',
   styleUrls: ['./home.css'],
 })

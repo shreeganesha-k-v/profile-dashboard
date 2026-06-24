@@ -6,8 +6,8 @@ export interface Certification {
   issuer: string;
   year: string;
   image: string;
-  credentialId: string;
-  verifyLink: string;
+  credentialId?: string;
+  verifyLink?: string;
   isOpen?: boolean;
 }
 
@@ -24,7 +24,6 @@ export class CertificationsComponent {
       issuer: 'freeCodeCamp',
       year: '2024',
       image: 'assets/certs/responsive_web_design.png',
-      credentialId: 'FCC-12345',
       verifyLink: 'https://www.freecodecamp.org/certification/shreeganesha_k_v/responsive-web-design',
       isOpen: false
     },
@@ -32,9 +31,16 @@ export class CertificationsComponent {
       title: 'SAFe 6.0',
       issuer: 'Scaled Agile',
       year: '2024',
-      image: 'assets/certs/safe.png',
-      credentialId: 'SAFE-67890',
-      verifyLink: 'https://scaledagile.com',
+      image: 'assets/certs/safe_practitioner.png',
+      credentialId: '11553280-4530',
+      isOpen: false
+    },
+    {
+      title: 'JavaScript Algorithms and Data Structures',
+      issuer: 'freeCodeCamp',
+      year: '2024',
+      image: 'assets/certs/js_algo.png',
+      verifyLink: 'https://www.freecodecamp.org/certification/shreeganesha_k_v/javascript-algorithms-and-data-structures-v8',
       isOpen: false
     }
   ];

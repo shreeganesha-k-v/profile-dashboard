@@ -1,0 +1,76 @@
+<section class="ai-section">
+
+  <div class="ai-card">
+
+    <div class="header">
+      <h2>AI JD Match Analyzer</h2>
+
+      <p>
+        Upload your resume and a job description
+        to analyze compatibility using AI.
+      </p>
+    </div>
+
+    <div class="development-note">
+      <strong>⚠️ Note:</strong> This feature is still in development and may not work as expected.
+    </div>
+
+    <div class="upload-section">
+
+      <label>
+        Upload Resume
+      </label>
+
+      <input
+        type="file"
+        accept=".pdf,.doc,.docx"
+        (change)="onResumeSelected($event)">
+
+      <span *ngIf="resumeFile">
+        {{ resumeFile?.name }}
+      </span>
+
+    </div>
+
+    <div class="upload-section">
+
+      <label>
+        Upload Job Description
+      </label>
+
+      <input
+        type="file"
+        accept=".pdf,.doc,.docx,.txt"
+        (change)="onJdSelected($event)">
+
+      <span *ngIf="jdFile">
+        {{ jdFile?.name }}
+      </span>
+
+    </div>
+
+    <button
+      class="analyze-btn"
+      (click)="analyze()">
+
+      Analyze Match
+
+    </button>
+
+    <div *ngIf="isLoading" class="loading-container">
+
+      <div class="loader"></div>
+
+      <div class="loading-steps">
+        <span>Reading resume...</span>
+        <span>Parsing JD...</span>
+        <span>Generating embeddings...</span>
+        <span>Running semantic analysis...</span>
+        <span>Calculating ATS score...</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

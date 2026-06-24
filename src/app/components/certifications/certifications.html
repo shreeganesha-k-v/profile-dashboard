@@ -25,8 +25,8 @@
         />
 
         <div class="details">
-          <p><strong>ID:</strong> {{ cert.credentialId }}</p>
-          <a [href]="cert.verifyLink" target="_blank">
+          <div *ngIf="cert.credentialId!=undefined"><p><strong>ID:</strong> {{ cert.credentialId }}</p></div>
+          <a *ngIf="cert.verifyLink!=undefined" [href]="cert.verifyLink" target="_blank">
             Verify Certificate
           </a>
         </div>
