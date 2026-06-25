@@ -11,3 +11,10 @@
 .navbar-brand {
   font-size: 1.3rem;
 }
+
+/* Make the navbar stick to the top while scrolling */
+nav.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030; /* above page content */
+}
