@@ -51,7 +51,10 @@ export class SkillsComponent {
         "Oracle",
         "SQL",
         "H2 Database",
-        "Database Design"
+        "Database Design",
+        "PostGreSQL",
+        "MongoDB",
+        "Redis"
       ]
     },
 
@@ -66,7 +69,11 @@ export class SkillsComponent {
         "CI/CD",
         "Postman",
         "Swagger",
-        "Jenkins"
+        "Jenkins",
+        "Maven",
+        "Helm",
+        "Ingress Controllers",
+        "Azure cloud services"
       ]
     },
 
