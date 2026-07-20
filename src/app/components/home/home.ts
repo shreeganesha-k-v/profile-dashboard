@@ -44,20 +44,34 @@ export class HomeComponent {
     "AWS"
   ];
 
-  stats = [
-    {
-      value: "3.5+",
-      label: "Years Experience"
-    },
-    {
-      value: "10+",
-      label: "Microservices Built"
-    },
-    {
-      value: "500+",
-      label: "LeetCode Problems"
-    }
-  ];
+  careerStartDate = new Date(2022, 7, 8);
+
+  getExperienceValue(): string {
+    const now = new Date();
+    const totalMonths =
+      (now.getFullYear() - this.careerStartDate.getFullYear()) * 12 +
+      (now.getMonth() - this.careerStartDate.getMonth());
+
+    const years = totalMonths / 12;
+    return `${years.toFixed(1)}+`;
+  }
+
+  get stats() {
+    return [
+      {
+        value: this.getExperienceValue(),
+        label: "Years Experience"
+      },
+      {
+        value: "10+",
+        label: "Microservices Built"
+      },
+      {
+        value: "500+",
+        label: "LeetCode Problems"
+      }
+    ];
+  }
 
   achievements = [
     {
